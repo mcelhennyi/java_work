@@ -1,6 +1,7 @@
 package drinkmachine;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -22,9 +23,9 @@ public class EditGUI extends JFrame
 	private String password;
 	private boolean noProtection = true;
 	private String[] checkedMixer;
-	private double[] mixerAmtNum;
-	private double totalAmtNum;
-	private double cupSizeAmtNum = 16;
+	private int[] mixerAmtNum;
+	private int totalAmtNum;
+	private int cupSizeAmtNum = 16;
 	private String wholeDrink;
 
 	//////////////////
@@ -313,9 +314,9 @@ public class EditGUI extends JFrame
 			totalAmtNum = mixerAmtNum[x] + totalAmtNum;
 		}
 		//display to total output
-		totalAmt.setText(Double.toString(totalAmtNum));
+		totalAmt.setText(Integer.toString(totalAmtNum));
 		//compare total to cupsize
-		cupSizeAmtNum = Double.parseDouble(cupSizeAmt.getText());
+		cupSizeAmtNum = Integer.parseInt(cupSizeAmt.getText());
 		if(cupSizeAmtNum - 2 > totalAmtNum)
 		{
 			//save drink
@@ -362,7 +363,7 @@ public class EditGUI extends JFrame
 	}
 
 
-	public double[] returnCheckedAmt()
+	public int[] returnCheckedAmt()
 	{
 		mixerAmtNum = new double[8];
 

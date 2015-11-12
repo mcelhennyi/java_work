@@ -362,7 +362,7 @@ public class EditGUI extends JFrame
 	}
 
 
-	public double[] returnCheckedAmt()
+	public int[] returnCheckedAmt()
 	{
 		mixerAmtNum = new double[8];
 

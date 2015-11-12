@@ -1,6 +1,7 @@
 package drinkmachine;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -22,9 +23,9 @@ public class EditGUI extends JFrame
 	private String password;
 	private boolean noProtection = true;
 	private String[] checkedMixer;
-	private double[] mixerAmtNum;
-	private double totalAmtNum;
-	private double cupSizeAmtNum = 16;
+	private int[] mixerAmtNum;
+	private int totalAmtNum;
+	private int cupSizeAmtNum = 16;
 	private String wholeDrink;
 
 	//////////////////
@@ -313,9 +314,9 @@ public class EditGUI extends JFrame
 			totalAmtNum = mixerAmtNum[x] + totalAmtNum;
 		}
 		//display to total output
-		totalAmt.setText(Double.toString(totalAmtNum));
+		totalAmt.setText(Integer.toString(totalAmtNum));
 		//compare total to cupsize
-		cupSizeAmtNum = Double.parseDouble(cupSizeAmt.getText());
+		cupSizeAmtNum = Integer.parseInt(cupSizeAmt.getText());
 		if(cupSizeAmtNum - 2 > totalAmtNum)
 		{
 			//save drink
@@ -362,57 +363,57 @@ public class EditGUI extends JFrame
 	}
 
 
-	public double[] returnCheckedAmt()
+	public int[] returnCheckedAmt()
 	{
-		mixerAmtNum = new double[8];
+		mixerAmtNum = new int[8];
 
 		if(mixer1Label.isSelected())
 		{
 			//verify selected option has a number and no letters
 
 			//add value in box to array
-			mixerAmtNum[0] = Double.parseDouble(mixer1Amt.getText());
+			mixerAmtNum[0] = Integer.parseInt(mixer1Amt.getText());
 		}
 		if(mixer2Label.isSelected())
 		{
 			//add value in box to array
-			mixerAmtNum[1] = Double.parseDouble(mixer2Amt.getText());
+			mixerAmtNum[1] = Integer.parseInt(mixer2Amt.getText());
 
 		}
 		if(mixer3Label.isSelected())
 		{
 			//add value in box to array
-			mixerAmtNum[2] = Double.parseDouble(mixer3Amt.getText());
+			mixerAmtNum[2] = Integer.parseInt(mixer3Amt.getText());
 
 		}
 		if(mixer4Label.isSelected())
 		{
 			//add value in box to array
-			mixerAmtNum[3] = Double.parseDouble(mixer4Amt.getText());
+			mixerAmtNum[3] = Integer.parseInt(mixer4Amt.getText());
 
 		}
 		if(mixer5Label.isSelected())
 		{
 			//add value in box to array
-			mixerAmtNum[4] = Double.parseDouble(mixer5Amt.getText());
+			mixerAmtNum[4] = Integer.parseInt(mixer5Amt.getText());
 
 		}
 		if(mixer6Label.isSelected())
 		{
 			//add value in box to array
-			mixerAmtNum[5] = Double.parseDouble(mixer6Amt.getText());
+			mixerAmtNum[5] = Integer.parseInt(mixer6Amt.getText());
 
 		}
 		if(mixer7Label.isSelected())
 		{
 			//add value in box to array
-			mixerAmtNum[6] = Double.parseDouble(mixer7Amt.getText());
+			mixerAmtNum[6] = Integer.parseInt(mixer7Amt.getText());
 
 		}
 		if(mixer8Label.isSelected())
 		{
 			//add value in box to array
-			mixerAmtNum[7] = Double.parseDouble(mixer8Amt.getText());
+			mixerAmtNum[7] = Integer.parseInt(mixer8Amt.getText());
 
 		}
 		else
