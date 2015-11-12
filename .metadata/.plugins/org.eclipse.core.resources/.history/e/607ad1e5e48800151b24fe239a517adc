@@ -168,7 +168,7 @@ public class FileWorker
 					{
 						drinkListLine = reader.readLine();
 						String[] tempLine = drinkListLine.split(" ");//assumes after first space is number for volume
-						if(Double.parseDouble(tempLine[tempLine.length-1])!=0)//if the amount for the mix is not zero check for that mixer.
+						if(Integer.parseInt(tempLine[tempLine.length-1])!=0)//if the amount for the mix is not zero check for that mixer.
 						{
 							for(int i = 0; i <= pumpCount-1; i++ )//checks each line in file versus the stored mixer
 							{
@@ -206,7 +206,7 @@ public class FileWorker
 					{
 						drinkListLine = reader.readLine();
 						String[] tempLine = drinkListLine.split(" ");//assumes after first space is number for volume
-						if(Double.parseDouble(tempLine[tempLine.length-1])!=0)//if the amount for the mix is not zero check for that mixer.
+						if(Integer.parseInt(tempLine[tempLine.length-1])!=0)//if the amount for the mix is not zero check for that mixer.
 						{
 							for(int i = 0; i <= pumpCount-1; i++ )//checks each mixer
 							{
@@ -435,9 +435,9 @@ public class FileWorker
 	}
 
 	//gets the amount of each mixer in a specific drink in order of mixer list file
-	public double[] getDrinkMakeUp(String drinkToMake)
+	public int[] getDrinkMakeUp(String drinkToMake)
 	{
-		double[] drinkMixerAmount = new double[pumpCount];
+		int[] drinkMixerAmount = new int[pumpCount];
 		String drinkBeingMade = "";
 		//search line by line for name of the drink
 
@@ -498,7 +498,7 @@ public class FileWorker
 		for(int x = 0; x < pumpCount; x++)
 		{ 
 			String[] tempString2 = tempString[x].split(" ");
-			drinkMixerAmount[x] = Double.parseDouble(tempString2[tempString2.length-1]);//splits each index of array tempString, parses the string at the last index (the part containing the amount) to an integer.
+			drinkMixerAmount[x] = Integer.parseInt(tempString2[tempString2.length-1]);//splits each index of array tempString, parses the string at the last index (the part containing the amount) to an integer.
 //			System.out.println(drinkMixerAmount[x]);
 		}
 

@@ -77,3 +77,13 @@ Rum 0
 Orange Soda 0
 Juice 0
 Apple Cider 0
+
+Coke Vodka
+Coke 5.2
+Vodka 6.1
+Jack Daniels 0.0
+Tequila 0.0
+Rum 0.0
+Orange Soda 0.0
+Juice 0.0
+Apple Cider 0.0

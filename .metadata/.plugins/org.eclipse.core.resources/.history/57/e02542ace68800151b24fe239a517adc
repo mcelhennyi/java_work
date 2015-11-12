@@ -9,8 +9,6 @@ import java.io.DataInputStream;
 import java.io.OutputStream;
 import java.util.Enumeration;
 
-import javax.swing.JOptionPane;
-
 
 public class ArduinoCom implements SerialPortEventListener
 {
@@ -100,7 +98,7 @@ public class ArduinoCom implements SerialPortEventListener
 
 			if (portId == null || serialPort == null) 
 			{
-				JOptionPane.showMessageDialog(null, "Oops... Could not connect to Arduino, using " + PORT_NAMES[0]);
+				System.out.println("Oops... Could not connect to Arduino, using " + PORT_NAMES[0]);
 				return false;
 			}
 

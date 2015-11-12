@@ -174,7 +174,7 @@ public class MakeGUI extends JFrame
 	}
 	public String encodeString()
 	{
-		double bigMixer;
+		int bigMixer;
 		int[] pwmArray = new int[pumpCount];
 		int indexOfBase;
 		double desiredFlowRate; 

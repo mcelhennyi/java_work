@@ -37,7 +37,7 @@ public class MakeGUI extends JFrame
 	private int pumpCount = 8;
 	private String[] drinkList = new String[500];
 	private String makeDrinkName;
-	private double[] mixerAmount = new double[pumpCount];
+	private int[] mixerAmount = new int[pumpCount];
 	private int pwmDataArraySize = 26;
 	private int[] pwmDataFlowRate = fileWorker.importFlowRateDataFile(pwmDataArraySize, "PumpData1.txt");
 	private int[] pwmDataPwm = fileWorker.importPwmRateDataFile(pwmDataArraySize, "PumpData1.txt");	
@@ -174,7 +174,7 @@ public class MakeGUI extends JFrame
 	}
 	public String encodeString()
 	{
-		double bigMixer;
+		int bigMixer;
 		int[] pwmArray = new int[pumpCount];
 		int indexOfBase;
 		double desiredFlowRate; 
