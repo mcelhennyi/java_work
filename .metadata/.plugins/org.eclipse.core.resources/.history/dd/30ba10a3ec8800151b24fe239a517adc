@@ -509,9 +509,9 @@ public class FileWorker
 	//Pump data methods//
 	/////////////////////
 
-	public double[] importFlowRateDataFile(int pumpDataArraySize, String pumpDataFileName)
+	public int[] importFlowRateDataFile(int pumpDataArraySize, String pumpDataFileName)
 	{
-		double[] pumpData = new double[pumpDataArraySize]; //26 as of first design
+		int[] pumpData = new int[pumpDataArraySize]; //26 as of first design
 
 		////////////////////
 		//Import file data//
@@ -542,7 +542,7 @@ public class FileWorker
 		String[] stringArray = pumpDataString.split("\n");
 		for(int x = 0; x<= pumpDataArraySize-1; x++)
 		{
-			pumpData[x] = Double.parseDouble(stringArray[x].split("-")[1]); //get the splitted string array, gets each element, splits and takes the data portion then parses to int and store in final array
+			pumpData[x] = Integer.parseInt(stringArray[x].split("-")[1]); //get the splitted string array, gets each element, splits and takes the data portion then parses to int and store in final array
 		}
 
 		return pumpData;

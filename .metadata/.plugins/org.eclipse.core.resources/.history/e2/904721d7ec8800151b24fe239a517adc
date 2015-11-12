@@ -39,7 +39,7 @@ public class MakeGUI extends JFrame
 	private String makeDrinkName;
 	private double[] mixerAmount = new double[pumpCount];
 	private int pwmDataArraySize = 26;
-	private double[] pwmDataFlowRate = fileWorker.importFlowRateDataFile(pwmDataArraySize, "PumpData1.txt");
+	private int[] pwmDataFlowRate = fileWorker.importFlowRateDataFile(pwmDataArraySize, "PumpData1.txt");
 	private int[] pwmDataPwm = fileWorker.importPwmRateDataFile(pwmDataArraySize, "PumpData1.txt");	
 	private double flowRate = pwmDataFlowRate[0]; //  second per oz
 	private int totalTime;
