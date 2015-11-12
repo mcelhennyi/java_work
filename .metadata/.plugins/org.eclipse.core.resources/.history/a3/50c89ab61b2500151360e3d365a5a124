@@ -1,0 +1,22 @@
+package drinkmachine;
+
+public class ArduinoComTester 
+{
+	public static void main(String []args)
+	{
+		ArduinoComDev test = new ArduinoComDev();
+		//format a string for transmission
+			//first byte is the amount of time required 
+				//...for longest poor.
+			//next 8 bytes is the PWM number for amount in
+				//...order of the mixers
+			//
+		String send = "Hello my Friend\n";
+		
+		
+
+		
+		test.setDrinkString(send);
+		test.ArduinoComDevStart();
+	}
+}

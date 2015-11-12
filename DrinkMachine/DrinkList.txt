@@ -1,0 +1,79 @@
+Cocktail
+Coke 5
+Jack 5
+Tequila 0
+Orange Soda 0
+Titos Vodka 5
+Fireball 0
+Sprite 0
+Juice 0
+
+Treasure
+Coke 5
+Vodka 0
+Jack Daniels 4
+Tequila 0
+Rum 5
+Orange Soda 0
+Juice 0
+Apple Cider 0
+
+yes
+Coke 0
+Vodka 2
+Jack Daniels 0
+Tequila 0
+Rum 0
+Orange Soda 0
+Juice 0
+Apple Cider 6
+
+Rum and Coke
+Coke 8
+Vodka 0
+Jack Daniels 0
+Tequila 0
+Rum 3
+Orange Soda 0
+Juice 0
+Apple Cider 0
+
+Grape 
+Coke 0
+Vodka 3
+Jack Daniels 0
+Tequila 0
+Rum 0
+Orange Soda 8
+Juice 0
+Apple Cider 0
+
+Fucked
+Coke 0
+Vodka 0
+Jack Daniels 0
+titos vodka 20
+Rum 0
+Orange Soda 10
+Juice 0
+Apple Cider 0
+
+Hell on Wheels
+Coke 0
+Jack 5
+Tequila 0
+Orange soda 0
+Titos Vodka 0
+Sprite 0
+Fireball 0
+Juice 0
+
+4 for 4 oz
+Coke 4
+Vodka 4
+Jack Daniels 4
+Tequila 4
+Rum 0
+Orange Soda 0
+Juice 0
+Apple Cider 0

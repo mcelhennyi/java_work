@@ -1,0 +1,8 @@
+Coke: 68
+Vodka: 68
+Jack Daniels: 59
+Tequila: 25
+Rum: 25
+Orange Soda: 68
+Juice: 25
+Apple Cider: 34
